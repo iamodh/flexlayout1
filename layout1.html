@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Layout1</title>
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Ubuntu:wght@400;500;700&display=swap');
+
+  html,body {
+    height: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  header {
+    height: 80px;
+    background-color: #00c73c;
+    color: mintcream;
+    font-family: 'Noto Serif', serif;
+  }
+
+  header h1 {
+    padding-top: 17px;
+  }
+
+  .tablist {
+    color: mintcream;
+    height: 60px;
+    background-color: rgba(0,0,0,0.1);
+    font-family: 'Noto Serif', serif;
+  }
+
+  .tablist h2 {
+    margin: 0 ;
+    padding-top: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+  }
+
+  .content img {
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  #last-image {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    height: 60px;
+    background-color: midnightblue;
+    color: mintcream;
+    font-family: 'Noto Serif', serif;
+  }
+
+  footer h2 {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  </style>
+</head>
+
+<body>
+    <header><h1>non-scroll 100% column layout<h1></header>
+    <div class="tablist"><h2>tablist<h2></div>
+    <div class="content">
+        <img src="https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk">
+        <span>Bambi</span>
+        <img src="https://i.picsum.photos/id/1020/4288/2848.jpg?hmac=Jo3ofatg0fee3HGOliAIIkcg4KGXC8UOTO1dm5qIIPc">
+        <span>Pooh</span>
+        <img src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y">
+        <span id="last-image">Yoda</span>
+    </div>
+
+    <footer>
+      <h2>footer</h2>
+    </footer>
+</body>
